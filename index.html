@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+h2 {
+    margin: auto;
+    width: 750px;
+    text-align: justify;
+    text-align-last: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    text-align: center;
+}
+p {
+    margin: auto;
+    width: 750px;
+    text-align: justify;
+    text-align-last: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li
+{
+    margin: auto;
+    width: 750px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<h1 style="font-family:Arial, Helvetica, sans-serif; font-weight: bold; font-size:40px;text-align: center;">Why, Idiom, why?</h1>
+<h2>A study of not-so-flawless data charts</h2>
+<body>
+<h2 style="font-size:25px;"><br>Example 1: <br><br></h2>
+<img src="https://www.aljazeera.com/wp-content/uploads/2022/02/Most-Spoken-Languages-1-1.png?w=770&resize=770%2C770" alt="The World's most spoken languages Source: Al Jazeera">
+<p> <br>At first glance, the chart looks simple, eye-catching and informative. To understand why it is flawed, let's look at what the chart is trying to say.<br><br> </p>
+<p> Why is the chart designed this way? <br> Al Jazeera designed this chart for World Mother Language Day on 21 February. This chart maps the most widely spoken languages by native and non-native speakers across the world. The languages are grouped and coloured according to the family that the language belongs to. The particular way the languages are grouped leads me to believe that the basic type of chart used is a packed circle chart. </p>
+<img src="https://datavizproject.com/wp-content/uploads/2016/06/DVP_1_100-67.png" alt="Packed Circle Chart" >
+<p> Circle packing provides a good overview of large data sets and the clear representation of groupings and structural relationships.<br><br> It seems to me that the elements are tesselated to remove negative spaces and improve the readability of the chart. It also helps that the outline is a circle which symbolises the world.</p>
+<p><br> What is wrong with this great-looking chart? </p>
+    <ul>
+        <li>
+            <p> Idiom Issue: </p>
+            <ol> 
+                <li>The idea is to understand how widely many languages are spoken based on the size of each tesselation. If the numbers of the populations speaking English and Mandarin Chinese weren't written, would it be so clear? </li>
+                <li>The bold line demarcating the language families seems unnecessary as they are differentiated by colour anyway. </li>
+                <li>It seems to me that the idiom has been chosen predominantly because the circular outline symbolises the Earth. </li>
+            </ol>
+        </li> <br>
+        <li>
+            <p> Data issue: </p>
+            <ul>
+                <li>Egyptian Arabic and Standard Arabic are shown as two different data points, when in fact Egyptian Arabic is a dialect and not a formal language. Given that other languages like English and Hindi also have dialects, it seems that the dialects are selectively added to visualise the language families in a particular way.</li>
+            </ul>
+        </li>
+        </ul>
+<p> Suggestions</p>
+<img src="https://datavizproject.com/wp-content/uploads/2016/06/DVP_101_200-01.png" alt="Grouped Bubble Chart" >
+<ul>
+    <li>
+        <p> A simple grouped bubble chart will easily let the viewer compare the sizes of speaker populations of each language. </p>
+    </li>
+    <li> If the chart is made interactive so that the viewer can hover the mouse over a circle (or a formal language) and it splits into smaller circles of the most widely spoken dialects of that language, it will solve the data issue.</li>
+</ul>
+<h2><br><br>Example 2: <br><br></h2>
+<img src="https://assets.pewresearch.org/wp-content/uploads/sites/13/legacy/u36/3-Messages_in_Cable_News_Coverage_of_Syria.png" alt="New Coverage of Syria Source: Pew Research Centre" >
+<p><br><br> The chart is part of a report examined the key messages or sentiments that were present in the stories about Syria, and that looks informative. At a closer glance, it confused me. </p>
+<p><br><br> Why is the chart designed this way? <br> This chart shows the sentiments of five American new channels: Al Jazeera America, CNN, MSNBC and Fox News and BBC America in favor or against U.S. military intervention in Syria over a span of 5 days in 2013. The viewer is meant to understand two types of comparisons: how much did each news channel broadcast one type of message, and how differently the same news channel broadcasted messages. The type of chart is a grouped bar chart. </p>
+<img src="https://datavizproject.com/wp-content/uploads/2015/10/6-Grouped-Bar-Chart.png" alt="Grouped Bar Chart" >
+<p><br><br> Grouped Bar Charts are used when two or more data sets are displayed side-by-side and grouped together under categories on the same axis.<br><br></p>
+<ul>
+    <li>
+        <p> Idiom Issue: </p>
+        <ul> 
+            <li>The chart is effective in communicating one type of comparison: 'how much does each news channel broadcast one type of message?' It fails in communicating the other type of comparison: 'how differently does the same news channel broadcast messages?' This is confusing mainly because the percentages don't add up to 100% (the chart notes that multiple messaging may appear.) Since both types of comparisons must be understood by the viewer to appreciate the chart fully, I do not think a static grouped bar chart is effective.</li>
+        </ul>
+    </li>
+    </ul>
+<p> Suggestions</p>
+<img src="https://datavizproject.com/wp-content/uploads/2016/06/DVP_1_100-07.png" alt="Proportional Area Chart" >
+    <ul>
+        <li>
+            <p> An interactive proportional area square chart provides a quick overview of the relative size of data without the use of scales. The interactivity will allow the chart to show one type of comparison at a time to be the most effective in communication and readability. </p>
+        </li>
+        </ul>
+<p style="color:grey;">Images and data about types of charts are sourced from: https://datavizproject.com/ </p>
+</body>
+</html>
